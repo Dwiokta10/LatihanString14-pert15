@@ -1,7 +1,9 @@
 # Dwi Okta Ramadhani
 # TI.24.A.1
 # Latihan STRING 1
-```python 
+
+# Kode Program
+```
 # Definisi string
 txt = 'Hello World'
 
@@ -11,37 +13,43 @@ print("Jumlah karakter:", len(txt))
 # Output
 Jumlah karakter: 11
 
-```python
+# Kode Program
+```
 # Ambil karakter terakhir
 print("Karakter terakhir:", txt[-1])
 ```
 # Output
 Karakter terakhir: d
-```python
+# Kode Program
+```
 # Ambil karakter index ke-2 sampai index ke-4
 print("Karakter index 2 sampai 4:", txt[2:5])
 ```
 # Output
 Karakter index 2 sampai 4: llo
-```python
+# Kode Program
+```
 # Hilangkan spasi pada teks tersebut
 print("Teks tanpa spasi:", txt.replace(" ", ""))
 ```
 # Output
 Teks tanpa spasi: HelloWorld
-```python
+# Kode Program
+```
 # Ubah teks menjadi huruf besar
 print("Huruf besar:", txt.upper())
 ```
 # Output
 Huruf besar: HELLO WORLD
-```python
+# Kode Program
+```
 # Ubah teks menjadi huruf kecil
 print("Huruf kecil:", txt.lower())
 ```
 # Output
 Huruf kecil: hello world
-```python
+# Kode Program
+```
 # Ganti karakter H dengan karakter J
 print("Ganti H dengan J:", txt.replace("H", "J"))
 ```
@@ -50,7 +58,8 @@ Ganti H dengan J: Jello World
 _____________________________
 
 # Latihan STRING 2
-```python
+# Kode Program
+```
 # Definisi variabel
 umur = 23
 txt = 'Hello, nama saya john, dan umur saya adalah {} tahun'
