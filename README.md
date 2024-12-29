@@ -78,22 +78,22 @@ Program ini dibuat menggunakan *Fitur*
 # Kode Program
 ```python
 def validasi_nama(nama):
-    # Cek apakah nama hanya berisi huruf
-    if nama.isalpha():
+    # Cek apakah nama hanya berisi huruf dan spasi
+    if all(x.isalpha() or x.isspace() for x in nama):
         return True, "Nama valid."
     else:
-        return False, "Nama hanya boleh berisi huruf."
+        return False, "Nama hanya boleh berisi huruf dan spasi."
 
 def validasi_nomor_telepon(nomor):
-    # Cek apakah nomor hanya berisi angka
-    if nomor.isdigit():
+    # Cek apakah nomor hanya berisi angka dan panjang nomor valid
+    if nomor.isdigit() and len(nomor) >= 10 and len(nomor) <= 13:
         return True, "Nomor telepon valid."
     else:
-        return False, "Nomor telepon hanya boleh berisi angka."
+        return False, "Nomor telepon harus terdiri dari 10 hingga 13 angka."
 
 def validasi_email(email):
     # Cek apakah email mengandung @ dan .
-    if "@" in email and "." in email:
+    if "@" in email and "." in email and email.index("@") < email.index("."):
         return True, "Email valid."
     else:
         return False, "Email harus mengandung karakter '@' dan '.'."
@@ -119,10 +119,26 @@ else:
         print("Error pada Nomor Telepon:", pesan_nomor)
     if not validasi_email_result:
         print("Error pada Email:", pesan_email)
+
 ```
 # Output Program
 ```
- 
+PS C:\Users\acer\Documents\KULIAH\PEMROGRAMAN\Latihan string 14 pert 15> python -u "c:\Users\acer\Documents\KULIAH\PEMROGRAMAN\Latihan string 14 pert 15\LATIHANINPUT.py"
+Masukkan nama lengkap: dwi okta ramadhani
+Masukkan nomor telepon: 085814233926
+Masukkan email: @dwi.okta.ramadhani.005.gmail.com
+Data pendaftaran valid.
+
+Masukkan nama lengkap: pramanta pratama putra
+Masukkan nomor telepon: 089678453678
+Masukkan email: @pratama.pramanta.ptr.gmail.com
+Data pendaftaran valid.
+
+Masukkan nama lengkap: munaroh
+Masukkan nomor telepon: 08975246617382
+Masukkan email: munaerohhabjd
+Data pendaftaran tidak valid.
+PS C:\Users\acer\Documents\KULIAH\PEMROGRAMAN\Latihan string 14 pert 15> python -u "c:\Users\acer\Documents\KULIAH\PEMROGRAMAN\Latihan string 14 pert 15\LATIHANINPUT.py"
 ```
 
 # Cara Kerja Program
