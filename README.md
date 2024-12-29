@@ -124,8 +124,9 @@ else:
 ```
  
 ```
+
 # Cara Kerja Program
-1. *Input Data Pengguna*:  
+1. Input Data Pengguna:  
    Pengguna akan diminta memasukkan:  
    - *Nama Lengkap*
    - *Nomor Telepon* 
